@@ -1,5 +1,13 @@
 .song-modal {
   margin: 0 50%;
+/* 
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  /* background-color: aqua; */
 }
 
 .modal-content {
@@ -40,15 +48,18 @@
 .modal-modal-description {
   display: flex;
   flex-direction: row;
-  color: #9a9a9a;
+  /* color: #9a9a9a; */
+  color: green;
 }
 .modal-album-title {
   color: #9a9a9a;
+  color: green;
 }
 .album-info {
   right: 0;
   position: fixed;
   margin-right: 5em;
+  color: green;
 }
 .divider {
   display: flex;
@@ -58,4 +69,8 @@
 .title_favourite,
 .card-content {
   display: flex;
+}
+
+.custom-card:hover .learn-more-button {
+  display: inline-block;
 }

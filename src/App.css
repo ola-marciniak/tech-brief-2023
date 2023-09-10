@@ -2,12 +2,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
-  align-items: center;
-  width: 60%;
+  align-items: baseline;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  /* margin-top: 20px; */
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 15vh;
+  align-content: space-around;
+  column-gap: 150px;
+  /* row-gap: 300px; */
+  margin-top: 200px;
 }
 
 .individual_card {
@@ -26,6 +31,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   margin-right: 1em;
+  margin-left: 1em;
   color: white;
   flex-direction: column;
   display: flex;
@@ -34,13 +40,30 @@
   position: fixed;
   z-index: 100;
   width: 80%;
-  height: 4rem;
+  height: 94px;
   display: flex;
   align-items: center;
-  background-color: rgba(226, 0, 0, 0.2);
+  background-color: #494949;
   margin: 0em 10em 2em 10em;
   padding: 1em;
   border-radius: 16px;
+  flex-shrink: 0;
+  opacity: 0.9;
+  /* width: 1392px;
+  /* --------- */
+  /* position: fixed;
+  z-index: 100;
+  height: 94px; */
+  /* width: 80%; */
+  /* left: 0;
+  right: 0; */
+  /* display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  /* opacity: 0.1; */
+  /* background: #FFF; */
+  /* background-color: rgba(226, 0, 0, 0.2); */
 }
 
 .header h1 {
@@ -49,12 +72,16 @@
 
 .full-page {
   padding: 1em;
+  /* color: #353535; */
+  color: pink;
 }
 .header-links .link {
   display: inline-block;
   padding: 0 1.5rem 0 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2rem;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 1.2rem; */
+  font-size: 16px;
+  font-style: normal;
   color: white;
   margin-right: 10px;
   text-decoration-color: #eb0573 !important;
@@ -65,12 +92,70 @@
   right: 0;
   position: absolute;
   margin-right: 4vw;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.10);
+  display: flex;
+  position: right;
+  float: right;
+  width: 306px;
+  padding: 15px 16px;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 54px; */
+  height: 36px;
+  /* margin-left: 12em; */
+  margin-right: 1em;
+
 }
 .css-i4bv87-MuiSvgIcon-root,
 .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root,
 .css-1x51dt5-MuiInputBase-input-MuiInput-input {
   color: white !important;
+  /* color: green; */
+  fill: var(--transparent, #FFF);
+  background-blend-mode: multiply;
 }
 .css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
   border-bottom: 2px solid #ffffff !important;
+}
+
+.navbar {
+  background: #353535;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-size: 17px;
+  border-top: 1px solid #FFFFFF;
+  padding: 14px 16px;
+  left: 24px
+}
+
+.text-navbar {
+  margin-right: 4vw;
+  display: flex;
+  position: right;
+  float: right;
+}
+
+.text-search {
+  /* margin-right: 4vw; */
+  position: absolute;
+  display: block;
+  display: flex;
+  float: left;
+  width: 100%;
+  padding: 14px 16px;
+  left: 200px;
+  top: 80px;
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFF;
 }
